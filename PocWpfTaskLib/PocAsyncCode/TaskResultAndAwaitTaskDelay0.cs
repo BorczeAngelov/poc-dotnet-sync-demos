@@ -11,7 +11,7 @@ namespace PocWpfTaskLib.PocAsyncCode
 
         private async Task<bool> StartReplayAsync()
         {
-            await Task.Delay(0); //TODO: Is there any effect???;
+            await Task.Delay(0); /// Seems there is no effect. For more details see: <see cref="TaskResultAndAwaitTaskDelay0_QueueDispatcher"/>
             return true;
         }
     }

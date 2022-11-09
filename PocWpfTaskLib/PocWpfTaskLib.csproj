@@ -70,6 +70,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainWindowVM.cs" />
+    <Compile Include="PocAsyncCode\TaskResultAndAwaitTaskDelay0_QueueDispatcher.cs" />
     <Compile Include="PocAsyncCode\TaskResultAndAwaitTaskDelay0.cs" />
     <Compile Include="PocAsyncCode\TaskResultAndAwaitTaskDelay1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">

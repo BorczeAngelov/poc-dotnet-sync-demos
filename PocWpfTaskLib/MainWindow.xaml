@@ -9,13 +9,15 @@
         MinHeight="150"
         MinWidth="400">
     <StackPanel Orientation="Vertical">
-        <Button x:Name="PoC_01"
-                Content="MainThread -> Task(of bool).Result -> await Task.Delay(0) = (no effect)???" 
+        <Button Content="MainThread -> Task(of bool).Result -> await Task.Delay(0) = (no effect)???" 
                 Margin="20"
                 Click="Button_Click_Delay0"/>
 
-        <Button x:Name="PoC_02"
-                Content="MainThread -> Task(of bool).Result -> await Task.Delay(1) = GUI Deadlock" 
+        <Button Content="MainThread -> QueueDispatcher -> await Task.Delay(0) = (no effect)???" 
+                Margin="20"
+                Click="Button_Click_Delay0_QueueDispatcher"/>
+
+        <Button Content="MainThread -> Task(of bool).Result -> await Task.Delay(1) = GUI Deadlock" 
                 Margin="20"
                 Click="Button_Click_Delay1"/>
     </StackPanel>

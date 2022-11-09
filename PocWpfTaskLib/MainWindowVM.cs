@@ -1,4 +1,5 @@
 ﻿using PocWpfTaskLib.PocAsyncCode;
+using System;
 
 namespace PocWpfTaskLib
 {
@@ -10,6 +11,11 @@ namespace PocWpfTaskLib
         internal void PoC01_TaskResultAndAwaitTaskDelay0()
         {
             var result = new TaskResultAndAwaitTaskDelay0().StartReplay();
+        }
+
+        internal void PoC01_TaskResultAndAwaitTaskDelay0_QueueDispatcher()
+        {
+            var result = new TaskResultAndAwaitTaskDelay0_QueueDispatcher().StartReplay();
         }
 
         /// <summary>
